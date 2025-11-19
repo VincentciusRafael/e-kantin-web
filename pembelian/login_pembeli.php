@@ -21,7 +21,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = mysqli_stmt_get_result($stmt);
     
     if ($user = mysqli_fetch_assoc($result)) {
-        if (password_verify($password, $user['password'])) {
+        
+        // Check password (plain text)
+        if ($password === $user['password']) {
+            
+            // Set session
             $_SESSION['id_user'] = $user['id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['role'] = $user['role'];
@@ -36,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="id">

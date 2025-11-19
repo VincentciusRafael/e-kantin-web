@@ -32,8 +32,9 @@ if (isset($_POST['login'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - E-Canteen</title>
+     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="images/WhatsApp Image 2025-01-04 at 10.08.50_8e6a12dc.jpg">
-    <script src="https://cdn.tailwindcss.com"></script>
+        
 </head>
 <body>
     <div class="min-h-screen relative">

@@ -316,7 +316,7 @@ if (isset($_POST['edit'])) {
                     </div>
                     <div class="flex justify-center space-x-4">
                         <button onclick="toggleDeleteModal()" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-300">
-                            Batal
+                            Cancel
                         </button>
                         <a id="confirmDeleteLink" href="#" class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition duration-300">
                             Ya, Hapus
